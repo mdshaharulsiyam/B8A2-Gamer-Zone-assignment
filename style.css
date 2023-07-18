@@ -1,6 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap');
+    /* typograph */
 *{
     font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.heading_style{
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.flex_parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+p{
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+li{
+    color: #0B0223;
+    font-size: 20px;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+}
+/* header section start here */
