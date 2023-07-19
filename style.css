@@ -8,6 +8,7 @@
 .container{
     max-width: 1440px;
     margin: 0 auto;
+    text-align: center;
 }
 .heading_style{
     font-size: 48px;
@@ -28,7 +29,6 @@
 p{
     color: #534C64;
     font-size: 18px;
-    font-weight: 400;
     line-height: 30px;
 }
 li{
@@ -128,7 +128,119 @@ header nav .background a:first-child{
     padding-right: 240px;
 }
 .baner_section .baner img{
-    width: 100%;
+    width: 96%;
 }
 /* baner section end  */
 /* header section end  */
+/* We are gamer section start */
+.We_are_gamer {
+    background:#FEF9FC;
+    box-sizing: border-box;
+    padding: 56px 0;
+}
+.We_are_gamer .flex_column{
+    width: calc(100%/2 - 52px);
+}
+.We_are_gamer .baner img{
+    width: 100%;
+}
+.We_are_gamer .content{
+    margin-left: 52px;
+    text-align: right;
+    box-sizing: border-box;
+    padding-left: 150px;
+}
+.We_are_gamer .content p{
+    padding: 24px 0;
+}
+.We_are_gamer .content a{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 17px 40px;
+    background:linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    border-radius: 48px;
+    display: inline-block;
+    margin: 8px 0 8px 0;
+}
+.We_are_gamer .content .Our_purpose{
+    color: #534C64;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px;
+}
+.We_are_gamer .content .Our_purpose span{
+    color: #534C64;
+    font-size: 32px;
+    font-weight: 700;
+    display: block;
+}
+/* We are gamer section end */
+/* Online Games Funny Videos section start  */
+.Funny_Videos{
+    box-sizing: border-box;
+    padding: 120px 0;
+}
+.Funny_Videos h2{
+    padding-bottom: 16px;
+}
+.Funny_Videos .grid_parent{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 24px;
+    margin-top: 48px;
+}
+.Funny_Videos .video_baner{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Funny_Videos .video_baner .play_button{
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    text-align: center;
+    transition: .5s ease all;
+    z-index: 1;
+}
+.Funny_Videos .video_baner:hover .play_button{
+    top:50%;
+}
+.Funny_Videos .video_baner::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background: #000000;
+    bottom: o;
+    left: 0;
+    opacity: .5;
+    transition: .5s ease all;
+}
+.Funny_Videos .video_baner:hover:after{
+    height: 100%;
+    border-radius: 16px;
+}
+.Funny_Videos .video_baner .play_button img{
+    display:block;
+    margin: 0 auto;
+}
+.Funny_Videos .video_baner .play_button p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 16px;
+}
+.Funny_Videos .video_caption{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px; 
+    padding-top: 24px;
+    text-align: left;
+}
+/* Online Games Funny Videos section end */
+/* Online Games Funny Videos section end  */
