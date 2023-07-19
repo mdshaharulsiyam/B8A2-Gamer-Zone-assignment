@@ -180,21 +180,24 @@ header nav .background a:first-child{
 /* Online Games Funny Videos section start  */
 .Funny_Videos{
     box-sizing: border-box;
-    padding: 120px 0;
+    padding: 70px 0;
+}
+.Funny_Videos .flex_column{
+    width: 24%;
+    padding-top: 48px;
 }
 .Funny_Videos h2{
     padding-bottom: 16px;
-}
-.Funny_Videos .grid_parent{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    row-gap: 24px;
-    margin-top: 48px;
 }
 .Funny_Videos .video_baner{
     position: relative;
     overflow: hidden;
     cursor: pointer;
+}
+
+.Funny_Videos .video_baner .poster{
+    width: 100%;
+    display: block;
 }
 
 .Funny_Videos .video_baner .play_button{
@@ -216,7 +219,7 @@ header nav .background a:first-child{
     width: 100%;
     height: 0%;
     background: #000000;
-    bottom: o;
+    bottom: 0;
     left: 0;
     opacity: .5;
     transition: .5s ease all;
@@ -300,9 +303,11 @@ header nav .background a:first-child{
 .Careers{
     background: #EB66A4;
     margin-top: 120px;
+    box-sizing: border-box;
+    padding: 150px 0;
 }
 .Careers .flex_column{
-    width: 50%; 
+    width: 45%; 
     text-align: left;
 }
 .Careers h2{
@@ -342,22 +347,438 @@ header nav .background a:first-child{
     border-radius: 48px;
     display: inline-block;
 }
-
 .Careers img{
-    width: 132%;
+    width: 100%;
 }
 /* Careers section start end  */
 /* game_catagory section start */
+.game_catagory {
+    box-sizing: border-box;
+    padding: 120px 0;
+}
 .game_catagory .flex_parent{
     justify-content: space-around;
-}
-.game_catagory .flex_column{
-    width: calc(100%/5);
-    text-align: center;
 }
 .game_catagory a{
     font-size: 20px;
     font-weight: 600;
-    display: inline-block;
-    padding: 29px 20px;
+    padding: 14px 24px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    transition: .5s ease all;
+    border: 1px;
+    margin:10px 1px;
 }
+.game_catagory a img {
+    margin-right: 5px;
+    height: 35px;
+}
+.game_catagory a:hover{
+    border:1px solid #EB66A4;
+    color: #EB66A4;
+}
+/* game_catagory section end  */
+/* footer section start  */
+.footer_section{
+    background: #0D0A23;
+    box-sizing: border-box;
+    padding: 120px 0;
+}
+.footer_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_section .footer_logo h4{
+    font-size: 45px;
+    font-weight: 700;
+    color: #FFF;
+}
+.footer_section .support a{
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding:60px 30px;
+    display: inline-block;
+}
+.footer_icon img{
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.footer_section  .policy a{
+    color: #9D9AA7;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 66px 30px 18px 30px ;
+}
+.footer_section p{
+    color: #9D9AA7;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+/* footer end  */
+
+
+/* responsive start here  */
+
+/* 1440px device */
+@media screen and (max-width: 1440px) {
+    .container{
+        max-width: 1140px;
+    }
+    .baner_section .baner_content {
+        padding: 63px 0 63px 113px;
+    }
+    .baner_section .baner {
+        padding-right: 113px;
+    }
+    .baner_section .baner img {
+        width: 83%;
+    }
+    .play_instant .baner .image_position {
+        bottom: -38px;
+        width: 216px;
+        left: -94px;
+    }
+    .play_instant .content {
+        padding-left: 84px;
+    }
+    .play_instant .content span {
+        line-height: 42px;
+    }
+    .Play_Games_Online .baner .image_position {
+        right: -121px;
+        width: 234px;
+        bottom: -118px;
+    }
+    .Careers ul li {
+        font-size: 16px; 
+    }
+    .game_catagory a {
+        font-size: 17px;
+        padding:10px;
+    }
+}
+/* 1366px device  */
+@media screen and (max-width: 1366px) {
+
+    .baner_section .baner img {
+        width: 89%;
+    }
+    .We_are_gamer .content {
+        padding-left: 0px;
+    }
+    .play_instant .content span {
+        line-height: 42px;
+    }
+    .Careers {
+        padding: 70px 0;
+    }
+    .Careers p {
+        padding: 24px 0 32px 0;
+    }
+    .Careers ul li {
+        font-size: 17px;
+    }
+    .Careers ul li {
+        line-height: 29px;
+    }
+    .game_catagory a {
+        padding: 9px 15px;
+        margin:10px 1px;
+    }
+    .footer_section .support a {
+        padding: 23px 30px;
+    }
+    .footer_section  .policy a {
+        padding: 30px 30px 18px 30px;
+    }
+    .footer_section {
+        padding: 70px 0;
+    }
+
+  }
+/* 1024px device */
+@media screen and (max-width: 1042px){
+     .container{
+            max-width: 926px;
+        }
+        .baner_section .baner_content {
+            padding: 24px 0 23px 63px;
+        }
+        .baner_section .baner {
+            padding-right: 63px;
+        }
+        .baner_section .baner img {
+            width: 83%;
+        }
+        .Careers ul li {
+            font-size: 14px;
+        }
+        .game_catagory a {
+            font-size: 14px;
+            padding: 10px;
+        }
+}
+/* 768px device */
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 680px;
+    }
+    nav .flex_parent {
+        display: block;
+    }
+    .main-menu li {
+        padding: 12px;
+    }
+    .baner_section{
+        padding: 0 20px;
+    }
+    .baner_section .flex_parent {
+        flex-direction: column-reverse;
+    }
+    .baner_section .flex_column{
+        width: 100%;
+    }
+    .baner_section .baner_content {
+        padding: 0 72px;
+        margin: 0;
+    }
+    .baner_section .baner img {
+        width: 100%;
+    }
+    .baner_sectione .baner{
+        text-align: center;
+        padding-right: 0;
+    }
+    .We_are_gamer .flex_column {
+      width: 100%;
+    }
+    .We_are_gamer .content {
+        margin-left: 0;
+        text-align: center;
+        padding-left: 0;
+    }
+    .Funny_Videos .flex_column {
+        width: 49%;
+        height: 465px;
+        padding-top: 48px;
+    }
+    .Funny_Videos .video_caption{
+        text-align: center;
+    }
+    .play_instant .flex_parent{
+        flex-direction: column-reverse;
+    }
+    .play_instant .flex_column {
+        text-align: center;
+        width: 100%;
+    }
+    .play_instant .baner .image_position {
+        bottom: -37px;
+        left: -1px;
+        width: 210px;
+    }
+    .play_instant .content {
+        margin-right: 0;
+        padding-left: 0;
+        padding-top: 90px;
+    }
+    .play_instant .content span {
+        line-height: 32px;
+    }
+    .play_instant, .Play_Games_Online {
+        padding: 20px 0;
+    }
+    .Play_Games_Online .flex_column {
+        width: 100%;
+        text-align: center;
+    }
+    .play_instant .baner .baner_image, .Play_Games_Online .baner .baner_image {
+        width: 76%;
+    }
+    .Play_Games_Online .content {
+        margin-left: 0;
+        padding: 51px 0;
+    }
+    .Play_Games_Online .baner .image_position {
+        right: 11px;
+        width: 198px;
+        bottom: -53px;
+    }
+    .Careers {
+        margin-top: 0;
+        padding: 70px 0;
+    }
+    .Careers .flex_column {
+        width: 100%;
+        text-align: center;
+    }
+    .Careers h2 {
+        font-size: 34px;
+    }
+    .Careers p {
+        line-height: 21px;
+        font-size: 18px;
+    }
+    .Careers .titale{
+        text-align: left;
+    }
+    .Careers ul li {
+        font-size: 18px;
+    }
+    .Careers a {
+        margin-bottom: 34px;
+    }
+    .game_catagory {
+        padding: 41px 0;
+    }
+    .game_catagory a {
+        font-size: 17px;
+        padding: 0px 0px;
+        margin: 10px 1px;
+    }
+    .footer_section .support a {
+        font-size: 14px;
+    }
+    .footer_icon img {
+        display: inline-block;
+        margin: 13px 30px;
+        cursor: pointer;
+    }
+
+}
+    
+  /* mobile large device 425px */
+  @media screen and (max-width: 425px){
+    .container{
+        max-width: 370px;
+    }
+    nav .flex_parent {
+        display: block;
+    }
+    .main-menu li {
+        padding: 12px;
+    }
+    .baner_section{
+        padding: 0 20px;
+    }
+    .baner_section .flex_parent {
+        flex-direction: column-reverse;
+    }
+    .baner_section .flex_column{
+        width: 100%;
+    }
+    .baner_section .baner_content {
+        padding: 0 9px;
+        margin: 0;
+    }
+    .baner_sectione .baner{
+        text-align: center;
+        padding-right: 0;
+    }
+    .We_are_gamer .flex_column {
+      width: 100%;
+    }
+    .We_are_gamer .content {
+        margin-left: 0;
+        text-align: center;
+        padding-left: 0;
+    }
+    .Funny_Videos .flex_column {
+        width: 100%;
+        padding-top: 48px;
+
+    }
+    .Funny_Videos .video_caption{
+        text-align: center;
+    }
+    .play_instant .flex_parent{
+        flex-direction: column-reverse;
+    }
+    .play_instant .flex_column {
+        text-align: center;
+        width: 100%;
+    }
+    .play_instant .baner .image_position {
+        bottom: -37px;
+        left: -1px;
+        width: 140px;
+    }
+    .play_instant .content {
+        margin-right: 0;
+        padding-left: 0;
+        padding-top: 90px;
+    }
+    .play_instant .content span {
+        line-height: 32px;
+    }
+    .play_instant, .Play_Games_Online {
+        padding: 20px 0;
+    }
+    .Play_Games_Online .flex_column {
+        width: 100%;
+        text-align: center;
+    }
+    .play_instant .baner .baner_image, .Play_Games_Online .baner .baner_image {
+        width: 76%;
+    }
+    .Play_Games_Online .content {
+        margin-left: 0;
+        padding: 51px 0;
+    }
+    .Play_Games_Online .baner .image_position {
+        right: 2px;
+        width: 115px;
+        bottom: -37px;
+    }
+    .Careers {
+        margin-top: 0;
+        padding: 70px 0;
+    }
+    .Careers .flex_column {
+        width: 100%;
+        text-align: center;
+    }
+    .Careers h2 {
+        font-size: 34px;
+    }
+    .Careers p {
+        line-height: 19px;
+        font-size: 14px;
+    }
+    .Careers .titale{
+        text-align: left;
+    }
+    .Careers ul li {
+        font-size: 12px;
+    }
+    .Careers a {
+        margin-bottom: 34px;
+    }
+    .game_catagory {
+        padding: 41px 0;
+    }
+    .game_catagory a {
+        font-size: 9px;
+        padding: 0px 0px;
+        margin: 10px 1px;
+    }
+    .footer_section .support a {
+        font-size: 14px;
+    }
+    .footer_icon img {
+        display: inline-block;
+        margin: 13px 30px;
+        cursor: pointer;
+    }
+  }
