@@ -243,4 +243,121 @@ header nav .background a:first-child{
     text-align: left;
 }
 /* Online Games Funny Videos section end */
-/* Online Games Funny Videos section end  */
+/* play instant section start  */
+/* Play Games Online Anywhere, Anytime section start  */
+.play_instant, .Play_Games_Online{
+    box-sizing: border-box;
+    padding: 120px 0;
+}
+.play_instant .flex_column{
+    width:calc(100%/2 - 120px);
+    text-align: right;
+}
+.play_instant .content {
+    box-sizing: border-box;
+    margin-right: 120px;
+    padding-left: 200px;
+}
+.play_instant .content span{
+    display: block;
+    line-height: 60px;
+}
+.play_instant .content p{
+    padding-top: 24px;
+}
+.play_instant .baner, .Play_Games_Online .baner{
+    position: relative;
+}
+.play_instant .baner .baner_image, .Play_Games_Online .baner .baner_image{
+    width: 100%;
+}
+.play_instant .baner .image_position{
+    position: absolute;
+    bottom: -60px;
+    left: -125px;
+}
+/* Online Games Funny Videos section end */
+.Play_Games_Online .baner .image_position {
+    position: absolute;
+    right: -164px;
+    bottom: -160px;
+}
+.Play_Games_Online .content{
+    margin-left: 120px;
+    box-sizing: border-box;
+    padding:0 50px;
+}
+.Play_Games_Online .flex_column{
+    width:calc(100%/2 - 120px);
+    text-align: left;
+}
+.Play_Games_Online h2{
+    padding-bottom: 24px;
+    line-height: 36px;
+}
+/* Play Games Online Anywhere, Anytime section end  */
+/* Careers section start here  */
+.Careers{
+    background: #EB66A4;
+    margin-top: 120px;
+}
+.Careers .flex_column{
+    width: 50%; 
+    text-align: left;
+}
+.Careers h2{
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.Careers p{
+    color: #FFF;
+    line-height: 30px; 
+    padding: 24px 0 32px 0;
+}
+.Careers ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+
+}
+.Careers ul li{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.Careers ul .location{
+    text-align: right;
+}
+.Careers a{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #FFF;
+    padding: 21px 40px;
+    border-radius: 48px;
+    display: inline-block;
+}
+
+.Careers img{
+    width: 132%;
+}
+/* Careers section start end  */
+/* game_catagory section start */
+.game_catagory .flex_parent{
+    justify-content: space-around;
+}
+.game_catagory .flex_column{
+    width: calc(100%/5);
+    text-align: center;
+}
+.game_catagory a{
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 29px 20px;
+}
