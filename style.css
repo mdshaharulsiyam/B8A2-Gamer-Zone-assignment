@@ -11,12 +11,13 @@
 }
 .heading_style{
     font-size: 48px;
-    font-weight: 700;
+    font-weight: 700; 
+}
+.text_color{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
 }
 .flex_parent{
     display: flex;
@@ -34,8 +35,100 @@ li{
     color: #0B0223;
     font-size: 20px;
     font-weight: 600;
+    list-style-type: none;
 }
 a{
     text-decoration: none;
 }
 /* header section start here */
+/* main menu section  */
+nav{
+    padding: 38px 0;
+}
+header nav .main-logo{
+    padding-right: 20px ;
+}
+.logo li{
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
+}
+.logo li .text_color,
+.logo .logo-text{
+    font-size: 45px;
+    font-weight: 700;
+    padding-bottom: 3px;
+}
+header nav li a{
+    padding: 8px 16px;
+    color: #3C354F;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+header nav .background {
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    box-sizing: border-box;
+    padding: 16px 16px 16px 24px;
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
+}
+header nav .background a{
+    padding:0 12px;
+}
+header nav .background a:first-child{
+    padding-left: 24px  ;
+}
+/* main menu section end  */
+/* baner section start  */
+.baner_section .flex_column{
+    width:calc(100%/2 - 68px);
+}
+.baner_section .baner_content {
+    box-sizing: border-box;
+    padding:148px 0 148px 240px;
+    background: url(images/Group14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 68px;
+}
+.baner_section .baner_content h1{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.baner_section .baner_content h1 span{
+    font-size: 95px;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    display: block;
+    padding: 4px 0 24px 0px;
+}
+.baner_section .baner_content li{
+    color: #534C64;
+    font-weight: 500;
+    text-transform: lowercase;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+}
+.baner_section .baner_content li:nth-child(3){
+    padding: 17px 0;
+}
+.baner_section .baner_content li img{
+    padding-right: 12px;
+}
+.baner_section .baner {
+    box-sizing: border-box;
+    padding-right: 240px;
+}
+.baner_section .baner img{
+    width: 100%;
+}
+/* baner section end  */
+/* header section end  */
